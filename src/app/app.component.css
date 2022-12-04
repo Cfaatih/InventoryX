@@ -1,0 +1,31 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer{
+  width: 260px;
+  background-color: #1e293b;
+  margin-top: 72px;
+  overflow: hidden;
+}
+
+mat-drawer-container{
+  height: 100%;
+}
+
+.mat-drawer-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 979px) {
+  mat-drawer{
+    box-shadow: none; visibility: hidden;
+  }
+
+}

@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+  <button mat-icon-button>
+    <!-- <mat-icon (click)="toggleSidebar()">menu</mat-icon> -->
+    <i class="fa fa-reorder" (click)="toggleSidebar()"></i>
+  </button>
+    <div class="row mr-2 ml-auto">
+        <ul>
+            <li>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>exit_to_app</mat-icon>
+                        Logaout
+                    </button>
+                </mat-menu>
+            </li>
+            <li>
+                <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 align-items-center">
+                    <img src="../../assets/favicon.ico" alt="user image" class="user-image mr-1 p-2">
+                    Mohamed
+                    <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+    </mat-toolbar-row>
+</mat-toolbar>  

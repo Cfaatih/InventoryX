@@ -1,0 +1,124 @@
+@media print {
+  @page
+  {
+    size: auto;   /* auto is the initial value */
+    margin: 5mm 5mm 0mm 5mm;  /* this affects the margin in the printer settings */
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 8pt;
+    line-height: 150%;
+    margin: 0px;
+    }
+  hr {
+    color: #ccc;
+    background-color: #ccc;
+  }
+  h1, h2, h3, h4, h5, h6, code, pre {
+    color: #000;
+    text-transform: none; /* because sometimes I set all-caps */
+  }
+  h1 {
+    font-size: 11pt;
+    margin-top: 1em;
+  }
+  h2 {
+    font-size: 10pt;
+  }
+  h3 {
+    font-size: 9pt;
+  }
+  h4, h5, h6 {
+    font-size: 8pt;
+  }
+  code, pre {
+    font-size: 8pt;
+    background-color: transparent;
+    /* just in case the user configured browser to print backgrounds */
+  }
+  blockquote {
+    background-image: none;
+    /* though they may not print, I’d rather be sure */
+  }
+  a:link, a:visited {
+    text-decoration: underline;
+    color: #000;
+  }
+  abbr:after, acronym:after { /* some HTML4 love */
+    content: " (" attr(title) ") ";
+    /* I suspect I am one of the few who still use these elements */
+  }
+
+
+  .visible-xs {
+    display: none !important;
+  }
+  .hidden-xs {
+    display: block !important;
+  }
+  table.hidden-xs {
+    display: table;
+  }
+  tr.hidden-xs {
+    display: table-row !important;
+  }
+  th.hidden-xs,
+  td.hidden-xs {
+    display: table-cell !important;
+  }
+  .hidden-xs.hidden-print {
+    display: none !important;
+  }
+  .hidden-sm {
+    display: none !important;
+  }
+  .visible-sm {
+    display: block !important;
+  }
+  table.visible-sm {
+    display: table;
+  }
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+
+  .visible-xs {
+  .responsive-invisibility();
+  }
+
+  .hidden-xs {
+  .responsive-visibility();
+  }
+
+  .hidden-xs.hidden-print {
+  .responsive-invisibility();
+  }
+
+  .hidden-sm {
+  .responsive-invisibility();
+  }
+
+  .visible-sm {
+  .responsive-visibility();
+  }
+
+
+  body {
+    font-family:Verdana; font-size: 11px;
+  }
+  .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding : 3px !important;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .taajUsLogo {
+    margin-left:317px !important;
+  }
+}

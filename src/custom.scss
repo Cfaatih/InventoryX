@@ -1,0 +1,89 @@
+/* === Import Bootstrap functions and variables === */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
+/*-------------------------------------------------------------------*/
+/* Change theme-colors */
+$theme-colors: (
+  primary: #234d7b,
+  secondary: #3b3c3e,
+  success: #1e6111,
+  info:  #64c3d2,
+  warning: #f5e74a,
+  danger: #820410
+);
+
+// scss-docs-start spacer-variables-maps
+$spacer: 0.25rem !default;
+$spacers: map-merge(
+    $spacers, (
+    1: $spacer,
+    2: $spacer*2,
+    3: $spacer*3,
+    4: $spacer*4,
+    5: $spacer*5,
+    6: $spacer*6,
+    8: $spacer*8,
+  )
+);
+
+$size: 0.25rem !default;
+$utilities: map-merge(
+    $utilities, (
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        1x: $size*1,
+        2x: $size*2,
+        3x: $size*3,
+        4x: $size*4,
+        5x: $size*5,
+        6x: $size*6,
+        8x: $size*8,
+        10x: $size*10,
+        15x: $size*15,
+        10: 10%,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    )
+);
+$utilities: map-merge(
+    $utilities, (
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        1x: $size*1,
+        2x: $size*2,
+        3x: $size*3,
+        4x: $size*4,
+        5x: $size*5,
+        6x: $size*6,
+        8x: $size*8,
+        10x: $size*10,
+        15x: $size*15,
+        10: 10%,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+  )
+);
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "../node_modules/bootstrap/scss/bootstrap";
+/*-------------------------------------------------------------------*/
+
+.flex-equal {
+  flex: 1 1 0;
+}
