@@ -22,10 +22,3 @@ mat-drawer-container{
   height: 100%;
   overflow: hidden;
 }
-
-@media (max-width: 979px) {
-  mat-drawer{
-    box-shadow: none; visibility: hidden;
-  }
-
-}

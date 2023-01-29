@@ -1,5 +1,5 @@
 <mat-drawer-container>
-  <mat-drawer mode="side" [opened]="sideBarOpened">
+  <mat-drawer mode="side" [opened]="sideBarOpened" [ngStyle]="{ display: screenWidth < 840 ? 'none' : 'block' }">
     <app-sidenav></app-sidenav>
   </mat-drawer>
   <mat-drawer-content>
