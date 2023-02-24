@@ -15,7 +15,7 @@ import { MatBadgeModule }  from '@angular/material/badge';
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HeaderComponent } from './_common/header/header.component';
-import { SidenabvComponent } from './_common/sidenabv/sidenabv.component';
+import { SidenabvComponent } from './_common/sidenav/sidenabv.component';
 import { HomeComponent } from './_common/home/home.component';
 import { DashboardComponent } from './_common/dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
