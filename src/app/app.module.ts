@@ -8,29 +8,29 @@ import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
-import { DialogComponent } from './dialog/dialog.component';
 import { MatPaginatorModule} from '@angular/material/paginator'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatBadgeModule }  from '@angular/material/badge';
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { HeaderComponent } from './header/header.component';
-import { SidenabvComponent } from './sidenabv/sidenabv.component';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './_common/header/header.component';
+import { SidenabvComponent } from './_common/sidenabv/sidenabv.component';
+import { HomeComponent } from './_common/home/home.component';
+import { DashboardComponent } from './_common/dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from "@angular/material/card";
+import { PageContainerComponent } from './_common/layout.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent,
     HeaderComponent,
     SidenabvComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    PageContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -3,10 +3,11 @@
     top: 0 1rem;
     background: #f1f5f9;
     &__box{
-        min-height: 120px;
+        min-height: 90px;
         background: #1e293b;
         margin: 0 -1rem;
-        font-size: 36px;
+        font-size: 26px;
+        margin-top: 50rem;
     }
     &__content{
         min-height: calc(100vh - 178px);
